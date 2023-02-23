@@ -1,0 +1,120 @@
+#include<iostream> 
+#include<conio.h>
+#include <iomanip>
+#include<string>
+
+using namespace std;
+
+int main(){
+int c;
+
+cout<<"***************************************************************************************************************************";
+cout<<"***************************************************************************************************************************";
+cout<<"\n\t\t\t\t\t\tWELCOME PLEASE CHOOSE OPTION\n";
+cout << "\t\t\t\t\t\t[1] STUDENT\n";
+cout << "\t\t\t\t\t\t[2] FACULTY\n" ;
+cout << "\t\t\t\t\t\t[3] EXIT\n" ;
+cout<<"***************************************************************************************************************************";
+cout<<"***************************************************************************************************************************";
+cout << "\n\t\t\t\t\t\tEnter Your Choice: ";
+cin>>c; // input user's choice
+
+if (c==1){
+		system("cls");
+		string num;
+	    string pass;
+		cout << "\t\t\t\t\t\t ID NUMBER: ";
+		cin.ignore();
+		getline(cin,num);
+		cout << "\t\t\t\t\t\t PASSWORD: ";
+	 	getline(cin,pass);
+	   
+	   	if (pass=="12345"){
+	   		 	system("cls");
+	   		 	int view;
+	   		 	cout<<"\n\t\t\t\t\t\t STUDENT INFORMATION PLEASE CHOOSE OPTION\n";
+	   		 	cout << "\t\t\t\t\t\t[1] VIEW GRADES\n";
+	   		 	cout << "\t\t\t\t\t\t[2] ENROLLMENT\n";
+	   		 	cout << "\n\t\t\t\t\t\tEnter Your Choice: ";
+	   		 	cin >> view;
+	if (view==1){
+	   		 		system("cls");
+	   		 		cout << "\n\t\t\t\t\t\t Student's Grades\n\n";
+	   		 		cout << "Civic Welfare Training Service 2: 1.00\n";
+	   		 		cout << "Engineering Drawing: 2.25\n";
+	   		 		cout << "Calculus 1: 1.25\n";
+	   		 		cout << "Rhytmic Activies: 1.75";
+					}
+				else if( view == 2){
+					system("cls");
+					cout << "\n\t\t\t\t\t\t Enrollment Tab\n\n";
+					cout << "General Chemistry\n";
+					cout << "Web Development 1\n";
+					cout << "Chemistry for Engineers\n";
+					cout << "General Physics\n";
+					cout << "Date of Enrollment: March 22,2023\n";
+					cout << " Enrollment Fee: Php 7000.00";
+				}
+			
+				else {
+					cout <<"INVALID INPUT";
+				}
+				
+				}
+			else {
+					system("cls");
+			cout<< "\n\t\t\t\t\t\t INVALID PASSWORD";
+				
+			}
+	   		 		
+	   		 	
+		   }
+	else if(c==2){
+			system("cls");
+		string num2;
+	    string pass2 ;
+		cout << "\t\t\t\t\t\t ID NUMBER: ";
+		cin.ignore();
+		getline(cin,num2);
+		cout << "\t\t\t\t\t\t PASSWORD: ";
+	   	getline(cin, pass2);
+		if (pass2=="12345"){
+	   		 	system("cls");
+	   		 	int view2;
+	   		 	cout<<"\n\t\t\t\t\t\t FACULTY INFORMATION \n";
+	   		 	cout << "\t\t\t\t\t\t[1] VIEW CLASS SCHEDULE\n";
+	   		 	cout << "\t\t\t\t\t\t[2] EXIT\n";
+	   		 	cout << "\n\t\t\t\t\t\tEnter Your Choice: ";
+	   		 	cin >> view2;
+	   		if (view2==1){
+	   		 		system("cls");
+	   		 		cout << "\n\t\t\t\t\t\tClass Schedule\n\n";
+	   		 		cout << "Object Oriented Programming\nFriday: 7:30 am to 10:30 am\n\n";
+					cout << "Physics for Engineers\nSaturday: 7:30a am to 11:00 am\n\n";
+					cout << "Physics for Engineers\nWednesday: 4:00 pm to 7pm\n\n";
+					cout << "Combative Sports\nWednesday: 1:00 pm to 3:00 pm\n\n";
+					}
+			else if(view2==2){
+				system("cls");
+				cout <<" Thank You!";
+			}
+			else {
+					system("cls");
+					cout <<"INVALID INPUT";
+				}
+	}
+		else {
+				system("cls");
+			cout<< "\n\t\t\t\t\t\t INVALID PASSWORD";
+		}
+			
+}
+else if (c=3){
+		system("cls");
+	cout << "Thank you!";
+	
+}
+else {
+	cout <<"INVALID INPUT";
+}
+}
